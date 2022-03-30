@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/black">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:foregroundTint="@android:color/white"
+        style="?android:attr/progressBarStyleSmall" />
+
+    <com.yu.lib.video.library.demo.test.FilterTestView
+        android:id="@+id/filerTestView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.yu.lib.video.library.demo.test.RecordButton
+        android:id="@+id/recordButton"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="42dp"/>
+
+    <ImageView
+        android:id="@+id/sure"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/video_rec_icon_confirm_enable"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="30dp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</FrameLayout>
